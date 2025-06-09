@@ -35,8 +35,8 @@
             this.DelBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.SNametextBox = new System.Windows.Forms.TextBox();
-            this.SIdtextBox = new System.Windows.Forms.TextBox();
+            this.SubjectNametextBox = new System.Windows.Forms.TextBox();
+            this.SubjectIdtextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,8 +75,8 @@
             this.groupBox1.Controls.Add(this.DelBtn);
             this.groupBox1.Controls.Add(this.UpdateBtn);
             this.groupBox1.Controls.Add(this.SaveBtn);
-            this.groupBox1.Controls.Add(this.SNametextBox);
-            this.groupBox1.Controls.Add(this.SIdtextBox);
+            this.groupBox1.Controls.Add(this.SubjectNametextBox);
+            this.groupBox1.Controls.Add(this.SubjectIdtextBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(60, 92);
@@ -96,6 +96,7 @@
             this.ClearBtn.TabIndex = 17;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // DelBtn
             // 
@@ -107,6 +108,7 @@
             this.DelBtn.TabIndex = 16;
             this.DelBtn.Text = "Delete";
             this.DelBtn.UseVisualStyleBackColor = false;
+            this.DelBtn.Click += new System.EventHandler(this.DelBtn_Click);
             // 
             // UpdateBtn
             // 
@@ -118,6 +120,7 @@
             this.UpdateBtn.TabIndex = 15;
             this.UpdateBtn.Text = "Update";
             this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // SaveBtn
             // 
@@ -129,22 +132,23 @@
             this.SaveBtn.TabIndex = 13;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // SNametextBox
+            // SubjectNametextBox
             // 
-            this.SNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SNametextBox.Location = new System.Drawing.Point(223, 107);
-            this.SNametextBox.Name = "SNametextBox";
-            this.SNametextBox.Size = new System.Drawing.Size(232, 27);
-            this.SNametextBox.TabIndex = 7;
+            this.SubjectNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectNametextBox.Location = new System.Drawing.Point(223, 107);
+            this.SubjectNametextBox.Name = "SubjectNametextBox";
+            this.SubjectNametextBox.Size = new System.Drawing.Size(232, 27);
+            this.SubjectNametextBox.TabIndex = 7;
             // 
-            // SIdtextBox
+            // SubjectIdtextBox
             // 
-            this.SIdtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SIdtextBox.Location = new System.Drawing.Point(223, 61);
-            this.SIdtextBox.Name = "SIdtextBox";
-            this.SIdtextBox.Size = new System.Drawing.Size(232, 27);
-            this.SIdtextBox.TabIndex = 6;
+            this.SubjectIdtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectIdtextBox.Location = new System.Drawing.Point(223, 61);
+            this.SubjectIdtextBox.Name = "SubjectIdtextBox";
+            this.SubjectIdtextBox.Size = new System.Drawing.Size(232, 27);
+            this.SubjectIdtextBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -198,6 +202,7 @@
             this.Name = "Subject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subject";
+            this.Load += new System.EventHandler(this.Subject_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -218,8 +223,8 @@
         private System.Windows.Forms.Button DelBtn;
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.TextBox SNametextBox;
-        private System.Windows.Forms.TextBox SIdtextBox;
+        private System.Windows.Forms.TextBox SubjectNametextBox;
+        private System.Windows.Forms.TextBox SubjectIdtextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
