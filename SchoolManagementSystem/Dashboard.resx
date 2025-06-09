@@ -117,26 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="university-teachers-school-blackboard-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\university-teachers-school-blackboard-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-user-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-user-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo-1497633762265-9d179a990aa6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1497633762265-9d179a990aa6.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo-1456513080510-7bf3a84b82f8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1456513080510-7bf3a84b82f8.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="teacher-discussing-class-students-listening-2gx5e9maah8m9o7y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\teacher-discussing-class-students-listening-2gx5e9maah8m9o7y.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wallpaperflare.com_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaperflare.com_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-admin-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-admin-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

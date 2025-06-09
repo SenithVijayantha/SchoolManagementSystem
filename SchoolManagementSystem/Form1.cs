@@ -29,8 +29,7 @@ namespace SchoolManagementSystem
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (dt.Rows.Count > 0)
-            {   
-                MessageBox.Show("Login Successful!");
+            {
                 Main main = new Main();
                 main.Show();
                 

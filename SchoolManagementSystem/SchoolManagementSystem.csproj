@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollement.Designer.cs">
+      <DependentUpon>Enrollement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Section.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section.Designer.cs">
+      <DependentUpon>Section.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,18 @@
     <Compile Include="Subject.Designer.cs">
       <DependentUpon>Subject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollement.resx">
+      <DependentUpon>Enrollement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,11 +118,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Section.resx">
+      <DependentUpon>Section.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Subject.resx">
       <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +154,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\photo-1497633762265-9d179a990aa6.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\university-teachers-school-blackboard-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher-discussing-class-students-listening-2gx5e9maah8m9o7y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,33 +2,38 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace SchoolManagementSystem
 {
-    public partial class Student : Form
+    public partial class Enrollement : Form
     {
-        public Student()
+        public Enrollement()
         {
             InitializeComponent();
         }
 
-        private void StudentTable_Render()
+        private void EnrollementTable_Render()
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Documents\SchoolDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM StudentTable", con);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM EnrollementTable", con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             sda.Fill(table);
             dataGridView1.DataSource = table;
             con.Close();
+        }
+
+        private void Enrollement_Load(object sender, EventArgs e)
+        { 
+            EnrollementTable_Render();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -48,26 +53,19 @@ namespace SchoolManagementSystem
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Documents\SchoolDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
-           
-            SqlCommand cmd = new SqlCommand("INSERT INTO StudentTable VALUES(@studentid, @studentname, @dob, @gender, @phone, @email)", con);
-            cmd.Parameters.AddWithValue("@StudentId", int.Parse(SIdtextBox.Text));
-            cmd.Parameters.AddWithValue("@StudentName", SNametextBox.Text);
-            cmd.Parameters.AddWithValue("@Dob", dateTimePicker1.Value);
-            cmd.Parameters.AddWithValue("@Gender", GendertextBox.Text);
-            cmd.Parameters.AddWithValue("@Phone", PhonetextBox.Text);
-            cmd.Parameters.AddWithValue("@Email", EmailtextBox.Text);
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO EnrollementTable VALUES(@enrollementid, @studentid, @section, @enrolldate)", con);
+            cmd.Parameters.AddWithValue("@EnrollementId", int.Parse(EnrollementIdtextBox.Text));
+            cmd.Parameters.AddWithValue("@StudentId", int.Parse(StudentIdBox.Text));
+            cmd.Parameters.AddWithValue("@Section", SectionNametextBox.Text);
+            cmd.Parameters.AddWithValue("@EnrollDate", dateTimePicker1.Value);
+
             cmd.ExecuteNonQuery();
             con.Close();
 
-            StudentTable_Render();
+            EnrollementTable_Render();
 
             MessageBox.Show("Record Saved Successfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        private void Student_Load(object sender, EventArgs e)
-        {
-            StudentTable_Render();
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
@@ -75,21 +73,18 @@ namespace SchoolManagementSystem
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Documents\SchoolDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("UPDATE StudentTable SET studentname=@studentname, dob=@dob, gender=@gender, phone=@phone, email=@email WHERE studentid=@studentid", con);
-            cmd.Parameters.AddWithValue("@StudentId", int.Parse(SIdtextBox.Text));
-            cmd.Parameters.AddWithValue("@StudentName", SNametextBox.Text);
-            cmd.Parameters.AddWithValue("@Dob", dateTimePicker1.Value);
-            cmd.Parameters.AddWithValue("@Gender", GendertextBox.Text);
-            cmd.Parameters.AddWithValue("@Phone", PhonetextBox.Text);
-            cmd.Parameters.AddWithValue("@Email", EmailtextBox.Text);
+            SqlCommand cmd = new SqlCommand("UPDATE EnrollementTable SET studentid=@studentid, section=@section, enrolldate=@enrolldate WHERE enrollementid=@enrollementid", con);
+            cmd.Parameters.AddWithValue("@EnrollementId", int.Parse(EnrollementIdtextBox.Text));
+            cmd.Parameters.AddWithValue("@StudentId", int.Parse(StudentIdBox.Text));
+            cmd.Parameters.AddWithValue("@Section", SectionNametextBox.Text);
+            cmd.Parameters.AddWithValue("@EnrollDate", dateTimePicker1.Value);
+
             cmd.ExecuteNonQuery();
             con.Close();
 
-            StudentTable_Render();
+            EnrollementTable_Render();
 
             MessageBox.Show("Record Updated Successfully", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            
         }
 
         private void DelBtn_Click(object sender, EventArgs e)
@@ -97,26 +92,23 @@ namespace SchoolManagementSystem
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Documents\SchoolDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("DELETE StudentTable WHERE studentid=@studentid", con);
-            cmd.Parameters.AddWithValue("@StudentId", int.Parse(SIdtextBox.Text));
+            SqlCommand cmd = new SqlCommand("DELETE EnrollementTable WHERE enrollementid=@enrollementid", con);
+            cmd.Parameters.AddWithValue("@EnrollementId", int.Parse(EnrollementIdtextBox.Text));
 
             cmd.ExecuteNonQuery();
             con.Close();
 
-            StudentTable_Render();
+            EnrollementTable_Render();
 
             MessageBox.Show("Record Deleted Successfully", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            SIdtextBox.Clear();
-            SNametextBox.Clear();
+            EnrollementIdtextBox.Clear();
+            StudentIdBox.Clear();
+            SectionNametextBox.Clear();
             dateTimePicker1.ResetText();
-            GendertextBox.Clear();
-            PhonetextBox.Clear();
-            EmailtextBox.Clear();
         }
     }
 }

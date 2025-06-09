@@ -31,12 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.DashboardBtn = new System.Windows.Forms.Button();
+            this.EnrollmentBtn = new System.Windows.Forms.Button();
+            this.SectionBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SubjectBtn = new System.Windows.Forms.Button();
             this.StudentBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,88 +65,88 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Navy;
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.DashboardBtn);
+            this.panel2.Controls.Add(this.EnrollmentBtn);
+            this.panel2.Controls.Add(this.SectionBtn);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.SubjectBtn);
             this.panel2.Controls.Add(this.StudentBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 646);
+            this.panel2.Size = new System.Drawing.Size(200, 506);
             this.panel2.TabIndex = 1;
             // 
-            // button7
+            // DashboardBtn
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 367);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(172, 38);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Dashboard";
-            this.button7.UseVisualStyleBackColor = true;
+            this.DashboardBtn.BackColor = System.Drawing.Color.Aqua;
+            this.DashboardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardBtn.Location = new System.Drawing.Point(12, 419);
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.Size = new System.Drawing.Size(172, 54);
+            this.DashboardBtn.TabIndex = 6;
+            this.DashboardBtn.Text = "Dashboard";
+            this.DashboardBtn.UseVisualStyleBackColor = false;
+            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
             // 
-            // button6
+            // EnrollmentBtn
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 310);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(172, 38);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Attendance";
-            this.button6.UseVisualStyleBackColor = true;
+            this.EnrollmentBtn.BackColor = System.Drawing.Color.Aqua;
+            this.EnrollmentBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnrollmentBtn.Location = new System.Drawing.Point(12, 338);
+            this.EnrollmentBtn.Name = "EnrollmentBtn";
+            this.EnrollmentBtn.Size = new System.Drawing.Size(172, 54);
+            this.EnrollmentBtn.TabIndex = 4;
+            this.EnrollmentBtn.Text = "Enrollement";
+            this.EnrollmentBtn.UseVisualStyleBackColor = false;
+            this.EnrollmentBtn.Click += new System.EventHandler(this.EnrollmentBtn_Click);
             // 
-            // button5
+            // SectionBtn
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 249);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 38);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Enrollement";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 187);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(172, 38);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Section";
-            this.button4.UseVisualStyleBackColor = true;
+            this.SectionBtn.BackColor = System.Drawing.Color.Aqua;
+            this.SectionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SectionBtn.Location = new System.Drawing.Point(12, 263);
+            this.SectionBtn.Name = "SectionBtn";
+            this.SectionBtn.Size = new System.Drawing.Size(172, 54);
+            this.SectionBtn.TabIndex = 3;
+            this.SectionBtn.Text = "Section";
+            this.SectionBtn.UseVisualStyleBackColor = false;
+            this.SectionBtn.Click += new System.EventHandler(this.SectionBtn_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Aqua;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 132);
+            this.button3.Location = new System.Drawing.Point(12, 187);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 38);
+            this.button3.Size = new System.Drawing.Size(172, 54);
             this.button3.TabIndex = 2;
             this.button3.Text = "Teacher";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // SubjectBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 77);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 38);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Subject";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SubjectBtn.BackColor = System.Drawing.Color.Aqua;
+            this.SubjectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectBtn.Location = new System.Drawing.Point(12, 112);
+            this.SubjectBtn.Name = "SubjectBtn";
+            this.SubjectBtn.Size = new System.Drawing.Size(172, 54);
+            this.SubjectBtn.TabIndex = 1;
+            this.SubjectBtn.Text = "Subject";
+            this.SubjectBtn.UseVisualStyleBackColor = false;
+            this.SubjectBtn.Click += new System.EventHandler(this.SubjectBtn_Click);
             // 
             // StudentBtn
             // 
+            this.StudentBtn.BackColor = System.Drawing.Color.Aqua;
             this.StudentBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentBtn.Location = new System.Drawing.Point(12, 17);
+            this.StudentBtn.Location = new System.Drawing.Point(12, 33);
             this.StudentBtn.Name = "StudentBtn";
-            this.StudentBtn.Size = new System.Drawing.Size(172, 38);
+            this.StudentBtn.Size = new System.Drawing.Size(172, 54);
             this.StudentBtn.TabIndex = 0;
             this.StudentBtn.Text = "Student";
-            this.StudentBtn.UseVisualStyleBackColor = true;
+            this.StudentBtn.UseVisualStyleBackColor = false;
             this.StudentBtn.Click += new System.EventHandler(this.StudentBtn_Click);
             // 
             // Main
@@ -156,7 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SchoolManagementSystem.Properties.Resources.wallpaperflare_com_wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1065, 706);
+            this.ClientSize = new System.Drawing.Size(1065, 566);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Main";
@@ -174,12 +173,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SubjectBtn;
         private System.Windows.Forms.Button StudentBtn;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button DashboardBtn;
+        private System.Windows.Forms.Button EnrollmentBtn;
+        private System.Windows.Forms.Button SectionBtn;
         private System.Windows.Forms.Button button3;
     }
 }

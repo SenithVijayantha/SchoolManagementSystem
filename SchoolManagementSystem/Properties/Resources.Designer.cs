@@ -63,6 +63,16 @@ namespace SchoolManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_admin_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-admin-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-100", resourceCulture);
@@ -86,6 +96,26 @@ namespace SchoolManagementSystem.Properties {
         internal static System.Drawing.Bitmap photo_1497633762265_9d179a990aa6 {
             get {
                 object obj = ResourceManager.GetObject("photo-1497633762265-9d179a990aa6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teacher_discussing_class_students_listening_2gx5e9maah8m9o7y {
+            get {
+                object obj = ResourceManager.GetObject("teacher-discussing-class-students-listening-2gx5e9maah8m9o7y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap university_teachers_school_blackboard_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("university-teachers-school-blackboard-wallpaper-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
